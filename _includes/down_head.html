@@ -3,7 +3,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>临帖大师</title>
         <link rel="shortcut icon" href="{{ "/assets/img/lintie-icon.png" | prepend: site.baseurl }}" type="image/x-icon">
-        <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
         <style>
             @font-face {
                 font-family: 'VSCO Gothic Book';
@@ -14,12 +13,16 @@
                 font-style: normal;
             }
             html,
-            body { width: 100%; height: 100%; margin: 0; padding: 0; }
+            body { 
+                width: 100%; 
+                height: 100%;
+                margin: 0;
+                padding: 0; 
+            }
             body {
-                background-color: #c6c7bf;
-                /* background: url('http://assets.vsco.co/assets/images/bg-china-shanghai.jpg') 50% 100% no-repeat; */
-                background: url('http://pb5293lro.bkt.clouddn.com/1w_bg.jpeg') 50% 100% no-repeat;
-                background-size: cover;
+          
+
+
                 color: #fff;
                 font-family: 'VSCO Gothic Book', 'Helvetica Neue', Helvetica, Arial, sans-serif;
                 font-size: 18px;
@@ -93,10 +96,29 @@
             }
             .iconImage {
                 /* margin-top: 20px;  */
-                margin-bottom: 100px;
+                margin-bottom: 50px;
                 width:100px; 
                 height:100px; 
                 border-radius:20px;
+            }
+
+
+            #particles-js .particles-js-canvas-el {
+                width: 100%!important;
+                height: 100vh!important;
+                display: block;
+            }
+
+            /* back */
+            #particles-js {
+                background: #1a222c;
+                display: flex;
+                vertical-align: bottom;
+                width: inherit;
+                /* min-height: 10vh; */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
             }
         </style>
     </head>
